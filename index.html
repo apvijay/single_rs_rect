@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../urapvr/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <title>A.P. Vijay Rengarajan | From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes</title>
+</head>
+
+<body>
+  <div id="page">
+      <h1><center>From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes</center></h1>
+<table class="table_of_img">
+<tr>
+<td><img id="img_in_table" src="optim.png"></td>
+<td><img id="img_in_table" src="eg.png"></td>
+</tr>
+</table>
+<br><br><br>
+
+  <sec-title>Abstract</sec-title>
+    <sec-contents>
+      <p>
+The rule of perspectivity that ‘straight-lines-must-
+remain-straight’ is easily inflected in CMOS cameras by
+distortions introduced by motion. Lines can be rendered
+as curves due to the row-wise exposure mechanism known
+as rolling shutter (RS). We solve the problem of correcting
+distortions arising from handheld cameras due to RS effect
+from a single image free from motion blur with special relevance 
+to urban scenes. We develop a procedure to extract
+prominent curves from the RS image since this is essential
+for deciphering the varying row-wise motion. We pose an
+optimization problem with line desirability costs based on
+straightness, angle, and length, to resolve the geometric
+ambiguities while estimating the camera motion based on a
+rotation-only model assuming known camera intrinsic matrix. 
+Finally, we rectify the RS image based on the estimated
+camera trajectory using inverse mapping. We show rectification 
+results for RS images captured using mobile phone
+cameras. We also compare our single image method against
+existing video and nonblind RS rectification methods that
+typically require multiple images.
+      </p><br><br>
+    </sec-contents>
+
+    <sec-contents></sec-contents>
+
+
+  <sec-title>Publication</sec-title>
+        <sec-contents>
+          <p><b>From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes</b><br>
+          <i>A.P. Vijay Rengarajan</i>, <a class="name" href="http://www.ee.iitm.ac.in/~raju">A.N. Rajagopalan</a>, and <a class="name" href="http://www.ee.iitm.ac.in/user/aravind/">R. Aravind</a><br><i>European Conference on Computer Vision (ECCV),</i> Zurich, Switzerland <br>September 2014<br>
+          <a href="../pdf/2016_cvpr.pdf">Paper</a> (1.1MB)<br>
+          <a href="../pdf/2016_cvpr_poster.pdf">Poster</a> (0.45MB)
+          <!--<a href="https://www.youtube.com/watch?v=KRXaETyANpg">Video spotlight</a><br>-->
+          <!--<a href="http://www.ee.iitm.ac.in/ipcvlab/research/changersmb">More results</a>-->
+          </p><br><br>
+        </sec-contents>
+
+
+<sec-contents></sec-contents>
+
+<sec-title>bibTeX</sec-title>
+<sec-contents>
+<code>
+@inproceedings{ rengarajan:2016:frombows,<br>
+year={2016},<br>
+title={From Bows to Arrows: Rolling Shutter Rectification of Urban Scenes},<br>
+author={Rengarajan, Vijay and Rajagopalan, Ambasamudram Narayanan and Aravind, Rangarajan},<br>
+booktitle={Proceedings of the IEEE International Conference on Computer Vision},<br>
+}
+</code><br><br><br>
+</sec-contents>
+
+<sec-contents></sec-contents>
+<sec-contents></sec-contents>
+
+<sec-title>Results</sec-title>
+<sec-contents><p>Given a single RS image, we detect curves and estimate the row-wise camera motion modelled as a polynomial that would make them straight under angle and length constraints. Finally, the RS image is rectifed using the estimated motion. </p>
+
+<table class="table_of_img_result">
+<tr>
+<td><img id="img_in_table_result" src="eg_curve.png"></td>
+</tr>
+<tr>
+<td><img id="img_in_table_result" src="eg_iter.png"></td>
+</tr>
+</table><br><br><br>
+</sec-contents>
+<br><br><br>
+
+<sec-contents></sec-contents>
+
+
+  </div>
+</body>
+</html>
